@@ -27,7 +27,9 @@ jobs:
             rake-job: almalinux-9
             test-lxc-image: images:almalinux/9
           - test-file: update-to-next-version-service-status.sh
-            args: [hogehoge, fugafuga, foofoo]
+            args: hogehoge
+          - test-file: update-to-next-version-service-status.sh
+            args: fugafuga
     steps:
       - name: Test
         run: |
